@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+.main-content {
+
+
+ /* Create two equal columns that floats next to each other */
+ .column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+   height: 300px; 
+ }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ input.answer[data-correct="1"]:checked + span {
+     color: green;
+ }
+ input.answer[data-correct="0"]:checked + span {
+     color: red;
+ }
+
+}
