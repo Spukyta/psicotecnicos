@@ -102,17 +102,6 @@ function generateRandomWrongAnswer(correctAnswer) {
     let shuffled = shuffle(answers);
     return shuffled;
 }
-/*
-function generateMatrixText(numbers) {
-    let text = '';
-    for (let i = 0; i < 5; i++) {
-        for (let j = 0; j < 6  ; j++) {
-            text+=numbers[i][j] + '  ';
-        }
-        text+='</br>'
-    }
-    return text;
-}*/
 
 function generateGridText(numbers) {
     let gridText = '';
