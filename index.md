@@ -3,7 +3,7 @@
 
 # Ejercicio 1
 
-- ¿Qué número se repite más veces?
+## ¿Qué número se repite más veces?
 
 <div class="row">
     <div class="column" id="matrix_col">c1</div>
