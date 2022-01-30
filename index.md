@@ -121,7 +121,7 @@ function generateGridText(numbers) {
         for (let j = 0; j < 6  ; j++) {
             gridText+='<div class="grid-item">' +numbers[i][j]  + '</div>';
         }
-        text+='</br>'
+        gridText+='</br>'
     }
     gridText+='</div>';
     return gridText;
