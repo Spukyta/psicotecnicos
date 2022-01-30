@@ -4,7 +4,7 @@
 
 - ¿Qué número se repite más veces?
 
-<div id="text"></div>
+DIV:<div id="text">0</div>
  
 <script>
 document.getElementById("text").innerHTML = "Text added by JavaScript code";
