@@ -27,6 +27,7 @@ let numberAnswer = getNumberAnswer(repetitions, max);
 let answers = generateRandomWrongAnswer(numberAnswer);
 
 let gridText = generateGridText(numbers);
+console.log(gridText);
 document.getElementById("matrix_col").innerHTML = gridText;
 
 let answersText = generateAnswersText(answers,numberAnswer);
