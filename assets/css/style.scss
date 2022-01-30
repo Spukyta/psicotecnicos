@@ -2,9 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
+
+.btn {
+    display: none !important;
+}
+
 .main-content {
-
-
  /* Create two equal columns that floats next to each other */
  .column {
    float: left;
@@ -27,9 +30,5 @@
  input.answer[data-correct="0"]:checked + span {
      color: red;
  }
-
- .btn {
-    display: none !important;
-  }
 
 }
