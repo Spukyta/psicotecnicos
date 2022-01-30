@@ -2,35 +2,7 @@
 <html>
 <body>
 
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        /* Create two equal columns that floats next to each other */
-        .column {
-          float: left;
-          width: 50%;
-          padding: 10px;
-          height: 300px; 
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
 
-        input.answer[data-correct="1"]:checked + span {
-	        color: green;
-        }
-        input.answer[data-correct="0"]:checked + span {
-            color: red;
-        }
-
-
-        </style>
 
 - ¿Qué número se repite más veces?
 
@@ -40,6 +12,36 @@
     <div class="column" id="answers_col">c2</div>
   </div>
  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; 
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    input.answer[data-correct="1"]:checked + span {
+        color: green;
+    }
+    input.answer[data-correct="0"]:checked + span {
+        color: red;
+    }
+
+
+    </style>
+
 <script>
 
 
