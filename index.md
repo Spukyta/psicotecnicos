@@ -26,8 +26,8 @@ let numberAnswer = getNumberAnswer(repetitions, max);
 
 let answers = generateRandomWrongAnswer(numberAnswer);
 
-let text = generateMatrixText(numbers);
-document.getElementById("matrix_col").innerHTML = text;
+let gridText = generateGridText(numbers);
+document.getElementById("matrix_col").innerHTML = gridText;
 
 let answersText = generateAnswersText(answers,numberAnswer);
 document.getElementById("answers_col").innerHTML = answersText;
@@ -101,7 +101,7 @@ function generateRandomWrongAnswer(correctAnswer) {
     let shuffled = shuffle(answers);
     return shuffled;
 }
-
+/*
 function generateMatrixText(numbers) {
     let text = '';
     for (let i = 0; i < 5; i++) {
@@ -111,6 +111,19 @@ function generateMatrixText(numbers) {
         text+='</br>'
     }
     return text;
+}*/
+
+function generateGridText(numbers) {
+    let gridText = '';
+    gridText+='<div id="grid">';
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 6  ; j++) {
+            gridText+='<div class="grid-item">' +numbers[i][j]  + '</div>';
+        }
+        text+='</br>'
+    }
+    gridText+='</div>';
+    return gridText;
 }
 
 function generateAnswersText(answers, correctAnswer) {
