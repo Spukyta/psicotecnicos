@@ -1,3 +1,5 @@
+## Welcome to Psicotécnicos
+
 # Ejercicio 1
 
 ## ¿Qué número se repite más veces?
